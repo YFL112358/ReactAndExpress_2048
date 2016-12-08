@@ -1,0 +1,17 @@
+{
+  "name": "stateAutomata",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build-production": "webpack --config ./webpack.production.config.js --progress --color",
+    "build-development": "webpack --config ./webpack.config.js --progress --color --watch",
+		"start-production": "NODE_ENV=production node ./api_daemon.js >./api_daemon.log 2>&1 &",
+		"start-development": "NODE_ENV=development node ./api_daemon.js"
+  },
+  "dependencies": {
+    "basic-auth": "^1.0.4",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "pug": "^2.0.0-beta5"
+  }
+}

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+basedir=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+
+sudo npm install -g webpack@1.13.3
+
+rm -rf $basedir/node_modules
+rm -rf $basedir/web/node_modules
+cd $basedir && npm install
+cd $basedir/web && npm install
