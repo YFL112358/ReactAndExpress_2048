@@ -1,7 +1,6 @@
-@import "style";
 @font-face {
-  font-family: 'Clear Sans';
-  src: url('../clear-sans.ttf');
+  font-family: "Clear Sans";
+  src: url('../clear-sans.ttf') format('truetype');
 }
 
 body {
@@ -116,7 +115,7 @@ body {
 }
 
 .tile {
-  position: relative;
+  position: absolute;
 }
 
 .tile.merged {
