@@ -1,3 +1,7 @@
+import './style.scss';
+import './main.scss';
+//require('whatwg-fetch'); // for browser compatibility
+//require('babel-polyfill'); // for browser compatibility
 var rotateLeft = function (matrix) {
   var rows = matrix.length;
   var columns = matrix[0].length;
@@ -57,7 +61,6 @@ Tile.prototype.toColumn = function () {
 };
 
 var Board = function () {
-  console.log("test");
   this.tiles = [];
   this.cells = [];
   for (var i = 0; i < Board.size; ++i) {
@@ -69,6 +72,7 @@ var Board = function () {
 };
 
 Board.prototype.addTile = function () {
+  console.log("test2");
   var res = new Tile;
   Tile.apply(res, arguments);
   this.tiles.push(res);
@@ -176,4 +180,4 @@ Board.prototype.hasLost = function () {
   }
   return !canMove;
 };
-module.exports.Board = Board;
+module.exports = Board;

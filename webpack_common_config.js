@@ -32,6 +32,13 @@ const commonConfig = {
 			{
 				test: /\.css$/,
 				loader: 'style-loader!css-loader'
+			},
+			{
+    		test: /\.scss$/,
+				loaders: ["style-loader", "css-loader", "sass-loader"]
+			},
+			{ test: /\.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
+	      loader: 'file-loader?name=fonts/[name].[ext]'
 			}
 		]
 	},

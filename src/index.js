@@ -1,15 +1,20 @@
+//import './style.scss';
+//import './main.scss';
 require('whatwg-fetch'); // for browser compatibility
 require('babel-polyfill'); // for browser compatibility
+//require ('gulp');
 const React = require('react');
 const ReactDOM = require('react-dom');
 const Board = require('./board');
 class BoardView extends React.Component {
   constructor(props) {
     super(props);
+		console.log("this is a test");
     this.state = {board: new Board};
   }
   restartGame() {
     this.setState({board: new Board});
+
   }
   handleKeyDown(event) {
     if (this.state.board.hasWon()) {
@@ -68,6 +73,8 @@ class BoardView extends React.Component {
     var tiles = this.state.board.tiles
       .filter(tile => tile.value != 0)
       .map(tile => <TileView tile={tile} key={tile.id} />);
+      console.log("hello2");
+
     return (
       <div className='board' onTouchStart={this.handleTouchStart.bind(this)} onTouchEnd={this.handleTouchEnd.bind(this)} tabIndex="1">
         {cells}
@@ -118,6 +125,8 @@ class TileView extends React.Component {
       classArray.push('isMoving');
     }
     var classes = classArray.join(' ');
+    console.log("hello3");
+
     return (
       <span className={classes}>{tile.value}</span>
     );
