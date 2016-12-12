@@ -14,7 +14,7 @@ const commonConfig = {
 	entry: {
 		test: './test.web.js',
 		game: './game.web.js',
-    vendor: ["react", "react-dom", "history", "whatwg-fetch", "babel-polyfill"]
+		vendor: ["react", "react-dom", "history", "whatwg-fetch", "babel-polyfill"]
   },
 	module: {
 		loaders: [
@@ -28,10 +28,6 @@ const commonConfig = {
 						require.resolve(webModuleAbsPath + '/babel-preset-es2015'),
 					],
 				}
-			},
-			{
-				test: /\.css$/,
-				loader: 'style-loader!css-loader'
 			},
 			{
 				test: /\.scss$/,
