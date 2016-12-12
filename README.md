@@ -9,6 +9,7 @@
 - 了解更多可以参考：https://github.com/genxium/ExpressAndReactDemo/blob/master/README.md
 	- 下载在本地：$ git clone https://github.com/shareming7/ReactAndExpress_2048.git 
 	- 对项目初始化：ReactAndExpress_2048$ ./init
-	- 对项目进行打包：ReactAndExpress_2048$ npm run build-development
-	- 启动项目：ReactAndExpress_2048$ npm run start-development 
-	- 可以通过访问：http://localhost:9090/base/game 看到访问到你的游戏页面
+	- 对项目进行打包：ReactAndExpress_2048$ npm run build-production
+	- 启动项目：ReactAndExpress_2048$ npm run start-production 
+	- 可以通过访问：http://localhost:9090/base/game 看到访问到的游戏页面
+	- 若想停止项目：ReactAndExpress_2048$ ./stop_api_daemon
