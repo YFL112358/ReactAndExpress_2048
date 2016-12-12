@@ -13,7 +13,7 @@ const commonConfig = {
 	},
 	entry: {
 		test: './test.web.js',
-		game: './index.js',
+		game: './game.web.js',
     vendor: ["react", "react-dom", "history", "whatwg-fetch", "babel-polyfill"]
   },
 	module: {

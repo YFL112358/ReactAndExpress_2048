@@ -1,5 +1,3 @@
-import './style.scss';
-import './main.scss';
 //require('whatwg-fetch'); // for browser compatibility
 //require('babel-polyfill'); // for browser compatibility
 var rotateLeft = function (matrix) {
