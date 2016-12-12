@@ -1,11 +1,10 @@
-//import './style.scss';
-//import './main.scss';
+import './web/src/style.scss';
+import './web/src/main.scss';
 require('whatwg-fetch'); // for browser compatibility
 require('babel-polyfill'); // for browser compatibility
-//require ('gulp');
 const React = require('react');
 const ReactDOM = require('react-dom');
-const Board = require('./board');
+const Board = require('./web/src/board');
 class BoardView extends React.Component {
   constructor(props) {
     super(props);
