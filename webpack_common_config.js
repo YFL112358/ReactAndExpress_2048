@@ -4,7 +4,7 @@ const webModuleAbsPath = path.resolve('./web/node_modules');
 
 const commonConfig = {
 	resolve: {
-		root:  [
+		root: [
 			webModuleAbsPath
 		]
 	},
@@ -15,7 +15,7 @@ const commonConfig = {
 		test: './test.web.js',
 		game: './game.web.js',
 		vendor: ["react", "react-dom", "history", "whatwg-fetch", "babel-polyfill"]
-  },
+	},
 	module: {
 		loaders: [
 			{
