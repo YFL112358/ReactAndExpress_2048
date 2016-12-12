@@ -9,10 +9,10 @@ exports.RET_CODE = {
 };
 
 exports.ROUTE_PATHS = {
-  ROOT: "/",
-  BASE: "/base",
+	ROOT: "/",
+	BASE: "/base",
 	TEST: "/test",
-  GAME:"/game",
+	GAME:"/game",
 };
 
 exports.ROUTE_PARAMS = {
