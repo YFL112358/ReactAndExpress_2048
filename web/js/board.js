@@ -1,5 +1,3 @@
-//require('whatwg-fetch'); // for browser compatibility
-//require('babel-polyfill'); // for browser compatibility
 var rotateLeft = function (matrix) {
   var rows = matrix.length;
   var columns = matrix[0].length;
@@ -70,7 +68,6 @@ var Board = function () {
 };
 
 Board.prototype.addTile = function () {
-  console.log("test2");
   var res = new Tile;
   Tile.apply(res, arguments);
   this.tiles.push(res);
