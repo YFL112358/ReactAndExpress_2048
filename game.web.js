@@ -4,7 +4,7 @@ require('whatwg-fetch'); // for browser compatibility
 require('babel-polyfill'); // for browser compatibility
 const React = require('react');
 const ReactDOM = require('react-dom');
-const Board = require('./web/style/js/board');
+const Board = require('./web/js/board');
 class BoardView extends React.Component {
   constructor(props) {
     super(props);
